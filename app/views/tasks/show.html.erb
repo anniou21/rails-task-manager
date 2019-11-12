@@ -1,0 +1,8 @@
+
+
+<h1>Tasks#Show</h1>
+<p><%= @task.title %></p>
+<p><%= @task.details %></p>
+<%= link_to 'Back home', tasks_path, class:'btn btn-primary' %>
+<%= link_to 'Edit', task_edit_path(@task), class:'btn btn-warning' %>
+<%= link_to 'Delete', task_path(@task), method: :delete, class:'btn btn-danger' %>
